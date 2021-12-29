@@ -33,7 +33,7 @@ describe('EchoerForm', () => {
     await wrapper.find('#echoinput').setValue('Hello world')
     await wrapper.find('#echo_btn').trigger('click')
     expect(echofn).toHaveBeenCalled()
-    expect(echofn).toBe(false)
+  
   })
   // control if the echo operation success
   it('clears echos', async() => {
